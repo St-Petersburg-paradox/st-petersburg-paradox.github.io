@@ -44,28 +44,29 @@
 -->
 <!DOCTYPE html>
 <html lang="en-CA">
-<head>
-    <title>St. Petersburg Paradox Simulator</title>
-    <link rel="stylesheet" href="sim-style.css">
-    <script src="sim.js"></script>
-</head>
-<body>
-<h1>Simulation</h1>
-<p>This automatic simulation of the St. Petersburg Lottery will calculate the average of the lottery games.</p>
-<button id="button" onclick="toggle()">Please turn on JavaScript to use this simulation.</button>
-<script>
-var running = false;
-document.getElementById("button").innerHTML = "Start";
-</script>
-<br><br><br>
-<p align="center" id="stats"></p>
-<br>
-<div id="full">
-    <div id="part">
-        <!--TODO: fix bar-->
-    </div>
-</div>
-<br>
-<div align="center"><button onclick="location = 'solution.html';">Back to Solution</button><button onclick="location = 'sim-logs.html';">Simulation with logging</button></div>
-</body>
+    <head>
+        <title>St. Petersburg Paradox Simulator</title>
+        <link rel="stylesheet" href="sim-style.css">
+        <script src="sim.js"></script>
+    </head>
+    <body>
+        <h1>Simulation</h1>
+        <p>This automatic simulation of the St. Petersburg Lottery will calculate the average of the lottery games.</p>
+        <button id="button" onclick="toggle()">Please turn on JavaScript to use this simulation.</button>
+        <script>
+            var running = false;
+            document.getElementById("button").innerHTML = "Start";
+        </script>
+        <br>
+        <div id="full">
+            <div id="part">
+                <!--TODO: fix bar-->
+            </div>
+        </div>
+        <div align="center" id="stats">
+            <!--TODO: add stats-->
+        </div>
+        <br>
+        <div align="center"><button onclick="location = 'solution.html';">Back to Solution</button><button onclick="location = 'sim-logs.html';">Simulation with logging</button></div>
+    </body>
 </html>

@@ -20,8 +20,13 @@ var simulation = () => {
     prizePool = 1;
     coin = !0;
     while (coin) {
-        prizePool *= 2;
-        coin = !!Math.round(Math.random());
+      prizePool *= 2;
+      coin = !!Math.round(Math.random());
+    }
+    if (!!winnings[prizePool]) {
+      winnings[prizePool] ++;
+    } else {
+      winnings[prizePool] = 1;
     }
     //TODO: percents
     //TODO: fix bar

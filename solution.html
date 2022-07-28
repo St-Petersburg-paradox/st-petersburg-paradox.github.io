@@ -44,115 +44,115 @@
 -->
 <!DOCTYPE html>
 <html lang="en-CA">
-<head>
-    <title>Solution to St. Petersburg Paradox</title>
-    <link rel="stylesheet" href="text-style.css">
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-                inlineMath: [
-                    [
-                        "$",
-                        "$"
-                    ],
-                    [
-                        "\\(",
-                        "\\)"
+    <head>
+        <title>Solution to St. Petersburg Paradox</title>
+        <link rel="stylesheet" href="text-style.css">
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [
+                        [
+                            "$",
+                            "$"
+                        ],
+                        [
+                            "\\(",
+                            "\\)"
+                        ]
                     ]
-                ]
-            },
-            "HTML-CSS": {
-                linebreaks: {
-                    automatic: true,
-                    width: "container"
-                }          
-            }              
-        });
-</script>
-</head>
-<body>
-<h1 align="center">The St. Petersburg Paradox</h1>
-<p>
-    We use H and T to denote heads and tails respectively:
-    <br><br>
-    If you won $2, you would have flipped T, so there is a
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mfrac>
-            <mn>1</mn>
-            <mn>2</mn>
-        </mfrac>
-    </math> chance.
-    <br><br>
-    Similarly, if you won $4, you would have flipped HT, so there is a
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mfrac>
-            <mn>1</mn>
-            <mn>4</mn>
-        </mfrac>
-    </math> chance.
-    <br><br>
-    If you instead won $8, you would have flipped HHT, so there is a
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mfrac>
-            <mn>1</mn>
-            <mn>8</mn>
-        </mfrac>
-    </math> chance.
-    <br><br>
-    And so on forever.
-    <br><br>
-    So, what's the expected value?
-    <br><br>
-    That would be <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mn>2</mn>
-        <mo>&#xB7;</mo>
-        <mfrac>
-            <mn>1</mn>
-            <mn>2</mn>
-        </mfrac>
-        <mo>+</mo>
-        <mn>4</mn>
-        <mo>&#xB7;</mo>
-        <mfrac>
-            <mn>1</mn>
-            <mn>4</mn>
-        </mfrac>
-        <mo>+</mo>
-        <mn>8</mn>
-        <mo>&#xB7;</mo>
-        <mfrac>
-            <mn>1</mn>
-            <mn>8</mn>
-        </mfrac>
-        <mo>+</mo>
-        <mo>&#x22EF;</mo>
-    </math>.
-    <br><br>
-    Simplifying, it would be
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mn>1</mn>
-        <mo>+</mo>
-        <mn>1</mn>
-        <mo>+</mo>
-        <mn>1</mn>
-        <mo>+</mo>
-        <mo>&#x22EF;</mo>
-    </math>, which goes to
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mo>&#x221E;</mo>
-    </math>.
-    <br><br>
-    Therefore, the expected value is infinite.
-    <br><br>
-    But who would play this lottery, even for just $25, considering that the expected earnings are infinite?
-    <br><br>
-    This lottery game is impossible, because a very lucky person may flip heads a lot of times, such that no one can pay for it.
-    <br><br>
-    So, even though the expected earnings are infinity, it would be impossible to get there.
-    <br><br>
-    Maybe we should check out a simulation to show how much we earn on average!
-</p>
-<div align="center"><button onclick="location = 'index.html';">Back to question</button><button onclick="location = 'sim.html';">Simulation</button></div>
-</body>
+                },
+                "HTML-CSS": {
+                    linebreaks: {
+                        automatic: true,
+                        width: "container"
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h1 align="center">The St. Petersburg Paradox</h1>
+        <p>
+            We use H and T to denote heads and tails respectively:
+            <br><br>
+            If you won $2, you would have flipped T, so there is a
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mn>1</mn>
+                    <mn>2</mn>
+                </mfrac>
+            </math> chance.
+            <br><br>
+            Similarly, if you won $4, you would have flipped HT, so there is a
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mn>1</mn>
+                    <mn>4</mn>
+                </mfrac>
+            </math> chance.
+            <br><br>
+            If you instead won $8, you would have flipped HHT, so there is a
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mn>1</mn>
+                    <mn>8</mn>
+                </mfrac>
+            </math> chance.
+            <br><br>
+            And so on forever.
+            <br><br>
+            So, what's the expected value?
+            <br><br>
+            That would be <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mn>2</mn>
+                <mo>&#xB7;</mo>
+                <mfrac>
+                    <mn>1</mn>
+                    <mn>2</mn>
+                </mfrac>
+                <mo>+</mo>
+                <mn>4</mn>
+                <mo>&#xB7;</mo>
+                <mfrac>
+                    <mn>1</mn>
+                    <mn>4</mn>
+                </mfrac>
+                <mo>+</mo>
+                <mn>8</mn>
+                <mo>&#xB7;</mo>
+                <mfrac>
+                    <mn>1</mn>
+                    <mn>8</mn>
+                </mfrac>
+                <mo>+</mo>
+                <mo>&#x22EF;</mo>
+            </math>.
+            <br><br>
+            Simplifying, it would be
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mn>1</mn>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo>+</mo>
+                <mo>&#x22EF;</mo>
+            </math>, which goes to
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mo>&#x221E;</mo>
+            </math>.
+            <br><br>
+            Therefore, the expected value is infinite.
+            <br><br>
+            But who would play this lottery, even for just $25, even though the expected earnings are infinite?
+            <br><br>
+            This lottery game is impossible, because a very lucky person may flip heads a lot of times, such that no one can pay for it.
+            <br><br>
+            So, even though the expected earnings are infinity, it would be impossible to get there.
+            <br><br>
+            Maybe we should check out a simulation to show how much we earn on average!
+        </p>
+        <div align="center"><button onclick="location = 'index.html';">Back to question</button><button onclick="location = 'sim.html';">Simulation</button></div>
+    </body>
 </html>
