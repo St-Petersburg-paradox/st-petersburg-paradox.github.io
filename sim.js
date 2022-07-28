@@ -18,7 +18,6 @@ var toggle = () => {
 
 var simulation = () => {
   if (running) {
-    //TODO: simulation
     prizePool = 1;
     coin = !0;
     while (coin) {
@@ -33,12 +32,11 @@ var simulation = () => {
     } else {
       winnings[prizePool] = 1;
     }
-    //TODO: percents
     for (let i = 2; i < highest; i * 2) {
       percents[i] = winnings[i] / total;
     }
     //TODO: fix bar
-    //TODO: stats
+    //TODO: stats; hard one
   }
 }
 setInterval(simulation, 0);

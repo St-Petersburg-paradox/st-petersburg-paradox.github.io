@@ -2,16 +2,19 @@ body {
   font-family: "Calibri", "Helvetica", "Arial", sans-serif;
   margin: 0 0 0 0;
 }
+
 h1 {
   margin-top: 8px;
   margin-left: 8px;
   margin-right: 8px;
 }
+
 p, span {
   font-size: 1.5em;
   margin-left: 8px;
   margin-right: 8px;
 }
+
 button {
   font-family: "Calibri", "Helvetica", "Arial", sans-serif;
   font-size: 20px;
@@ -22,22 +25,87 @@ button {
   background-color: #588bd1;
   color: white;
 }
+
 button:hover {
   background-color: #689be1;
 }
+
 button:active {
   background-color: #386bb1;
 }
+
 #full {
   height: 30vh;
   width: 100%;
   background-color: #f00;
 }
-#part {
+
+#a2048 {
+  width: 0.048828125%;
+  height: 30vh;
+  background-color: #000;
+}
+
+#a1024 {
+  width: 0.09765625%;
+  height: 30vh;
+  background-color: #111;
+}
+
+#a512 {
+  width: 0.1953125%;
+  height: 30vh;
+  background-color: #333;
+}
+
+#a256 {
+  width: 0.390625%;
+  height: 30vh;
+  background-color: #444;
+}
+
+#a128 {
+  width: 0.78125%;
+  height: 30vh;
+  background-color: #666;
+}
+
+#a64 {
+  width: 1.5625%;
+  height: 30vh;
+  background-color: #777;
+}
+
+#a32 {
+  width: 3.125%;
+  height: 30vh;
+  background-color: #999;
+}
+
+#a16 {
+  width: 6.25%;
+  height: 30vh;
+  background-color: #aaa;
+}
+
+#a8 {
+  width: 12.5%;
+  height: 30vh;
+  background-color: #ccc;
+}
+
+#a4 {
+  width: 25%;
+  height: 30vh;
+  background-color: #eee;
+}
+
+#a2 {
   width: 50%;
   height: 30vh;
-  background-color: #070;
+  background-color: #fff;
 }
+
 #stats {
   margin-top: 0;
   margin-bottom: 0;
