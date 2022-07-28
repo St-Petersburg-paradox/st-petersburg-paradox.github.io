@@ -1,0 +1,44 @@
+body {
+  font-family: "Calibri", "Helvetica", "Arial", sans-serif;
+  margin: 0 0 0 0;
+}
+h1 {
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+p, span {
+  font-size: 1.5em;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+button {
+  font-family: "Calibri", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 0;
+  height: 45px;
+  background-color: #588bd1;
+  color: white;
+}
+button:hover {
+  background-color: #689be1;
+}
+button:active {
+  background-color: #386bb1;
+}
+#full {
+  height: 30vh;
+  width: 100%;
+  background-color: #f00;
+}
+#part {
+  width: 50%;
+  height: 30vh;
+  background-color: #070;
+}
+#stats {
+  margin-top: 0;
+  margin-bottom: 0;
+}
